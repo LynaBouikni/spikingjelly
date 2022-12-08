@@ -601,7 +601,7 @@ class IFNode(BaseNode):
 
 
 class LIFNode(BaseNode):
-    def __init__(self, tau: float = 2., decay_input: bool = True, v_threshold: float = 1.,
+    def __init__(self, tau: float = 2., decay_input: bool = True, v_threshold: float = 0.7,
                  v_reset: float = 0., surrogate_function: Callable = surrogate.Sigmoid(),
                  detach_reset: bool = False, step_mode='s', backend='torch', store_v_seq: bool = False):
         """
